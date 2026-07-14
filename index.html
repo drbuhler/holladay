@@ -1,0 +1,143 @@
+---
+layout: default
+title: 25 Holladay Apartments — Now Renting in Danville, KY
+---
+
+{% assign apply = site.apply_url %}
+{% assign mailto = "mailto:" | append: site.email %}
+{% assign tel = "tel:" | append: site.phone_link %}
+
+<!-- ============================ HEADER ============================ -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="25 Holladay Apartments home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">25&nbsp;Holladay</span>
+    </a>
+    <nav class="header-actions">
+      <a class="phone-link" href="{{ tel }}">{{ site.phone }}</a>
+      <a class="btn btn-solid" href="{{ apply }}" target="_blank" rel="noopener">Apply now</a>
+    </nav>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="diamond" aria-hidden="true"></span> Now renting · {{ site.city }}</p>
+      <h1>25&nbsp;Holladay<br><span class="h1-sub">Apartments</span></h1>
+      <p class="lede">Come join our community. Comfortable, well-kept apartment homes with the kind of steady, responsive management that makes a place feel like home.</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="{{ apply }}" target="_blank" rel="noopener">Apply now</a>
+        <a class="btn btn-ghost" href="{{ mailto }}">Email us</a>
+      </div>
+      <ul class="hero-meta">
+        <li><a href="{{ tel }}">{{ site.phone }}</a></li>
+        <li><a href="{{ mailto }}">{{ site.email }}</a></li>
+      </ul>
+    </div>
+
+    <figure class="hero-figure">
+      <img src="{{ '/assets/images/front_view.jpg' | relative_url }}"
+           alt="Exterior of 25 Holladay Apartments, a two-story building in Danville, Kentucky"
+           width="1800" height="716" loading="eager">
+      <span class="figure-corner" aria-hidden="true"></span>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================ FEATURES ============================ -->
+<section class="features" aria-label="Why residents choose 25 Holladay">
+  <div class="wrap">
+    <p class="section-eyebrow"><span class="diamond" aria-hidden="true"></span> Why residents choose us</p>
+    <div class="feature-grid">
+
+      <article class="feature">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        </span>
+        <h3>Convenient location</h3>
+        <p>Close to everyday essentials, work, and everything that keeps small-town life easy — right in the heart of Danville.</p>
+      </article>
+
+      <article class="feature">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9h14v-9"/><path d="M10 19v-5h4v5"/></svg>
+        </span>
+        <h3>Great neighborhood</h3>
+        <p>A quiet, established community with room to breathe — the kind of setting neighbors are glad to call home.</p>
+      </article>
+
+      <article class="feature">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </span>
+        <h3>Responsive management</h3>
+        <p>A real person answers the phone. When something needs attention, we handle it promptly and keep you in the loop.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ABOUT ============================ -->
+<section class="about">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <p class="section-eyebrow"><span class="diamond" aria-hidden="true"></span> About the community</p>
+      <h2>Simple, well-kept homes in Danville, Kentucky.</h2>
+      <p>25 Holladay Apartments offers straightforward apartment living without the fuss — clean, comfortable units, tidy grounds, and management that treats residents the way they'd want to be treated. Whether you're settling in for the long term or just starting out, you'll find an honest place to land.</p>
+      <p>Ready to see what's available? The application takes just a few minutes online, or reach out and we'll walk you through it.</p>
+      <div class="about-cta">
+        <a class="btn btn-solid" href="{{ apply }}" target="_blank" rel="noopener">Start your application</a>
+        <a class="link-arrow" href="{{ tel }}">Or call {{ site.phone }} &rsaquo;</a>
+      </div>
+    </div>
+    <aside class="about-card">
+      <span class="diamond big" aria-hidden="true"></span>
+      <p class="card-label">Get in touch</p>
+      <a class="card-line" href="{{ tel }}">{{ site.phone }}</a>
+      <a class="card-line" href="{{ mailto }}">{{ site.email }}</a>
+      <p class="card-note">{{ site.city }}</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ============================ CTA BAND ============================ -->
+<section class="cta-band">
+  <div class="wrap cta-inner">
+    <h2>Now renting — come join our community.</h2>
+    <p>Apply online today, or get in touch and we'll help you find your next home.</p>
+    <div class="cta-actions">
+      <a class="btn btn-gold" href="{{ apply }}" target="_blank" rel="noopener">Apply now</a>
+      <a class="btn btn-outline-light" href="{{ mailto }}">Email us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <p class="footer-name">{{ site.title }}</p>
+        <p class="footer-sub">{{ site.city }}</p>
+      </div>
+    </div>
+    <div class="footer-contact">
+      <a href="{{ tel }}">{{ site.phone }}</a>
+      <a href="{{ mailto }}">{{ site.email }}</a>
+      <a href="{{ apply }}" target="_blank" rel="noopener">Apply now</a>
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <span class="eho" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 11 12 5l8 6"/><rect x="6" y="11" width="12" height="8"/><line x1="9" y1="13.5" x2="15" y2="13.5"/><line x1="9" y1="16.5" x2="15" y2="16.5"/></svg>
+    </span>
+    <p>Equal Housing Opportunity · &copy; {{ 'now' | date: "%Y" }} {{ site.entity }}. All rights reserved.</p>
+  </div>
+</footer>

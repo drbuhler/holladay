@@ -1,0 +1,32 @@
+# --- 25 Holladay Apartments -----------------------------------------------
+# Edit the values below to update the whole site in one place.
+
+title:       "25 Holladay Apartments"
+tagline:     "Now renting in Danville, Kentucky"
+description: >-
+  25 Holladay Apartments — now renting in Danville, Kentucky. Convenient
+  location, great neighborhood, and responsive management. Apply online today.
+
+# Contact details (used across the page)
+email:      "25holladay@gmail.com"
+phone:      "859 712 9944"
+phone_link: "+18597129944"          # click-to-call format, no spaces
+city:       "Danville, Kentucky"
+
+# Online application (Innago)
+apply_url:  "https://property-owner.innago.com/properties/list/details/256595/512880"
+
+# Business entity for the footer
+entity:     "25 Holladay Investments"
+
+# --- Hosting --------------------------------------------------------------
+# Site will live at https://drbuhler.com/holladay
+url:     "https://drbuhler.com"
+baseurl: "/holladay"
+
+# --- Build ----------------------------------------------------------------
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
