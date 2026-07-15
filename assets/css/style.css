@@ -141,7 +141,10 @@ h1,h2,h3 {
 
 .hero-figure { position: relative; margin: 0; }
 .hero-figure img {
-  width: 100%; border-radius: var(--radius);
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;          /* crop to fill — never stretch */
+  border-radius: var(--radius);
   box-shadow: var(--shadow-md);
   border: 1px solid var(--line);
 }
@@ -206,6 +209,22 @@ h1,h2,h3 {
 .card-line { display: block; font-family: "Fraunces", serif; font-size: 1.5rem; color: var(--ink); font-weight: 440; margin-bottom: .4rem; }
 .card-line:hover { color: var(--gold-ink); }
 .card-note { margin: 1rem 0 0; color: var(--muted); font-size: .95rem; }
+
+/* ------------------------------ gallery -------------------------------- */
+.gallery { padding-block: clamp(3rem, 6vw, 4.5rem) clamp(3.5rem, 7vw, 5rem); }
+.gallery-title { font-size: clamp(1.7rem, 3.4vw, 2.4rem); margin-bottom: 1.75rem; }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.1rem;
+}
+.shot { margin: 0; overflow: hidden; border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow-sm); }
+.shot img {
+  width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  display: block;
+  transition: transform .5s cubic-bezier(.2,.7,.2,1);
+}
+.shot:hover img { transform: scale(1.045); }
 
 /* ------------------------------ cta band ------------------------------- */
 .cta-band { background: var(--ink); color: #dfe2ea; padding-block: clamp(3.5rem, 7vw, 5rem); text-align: center; }
